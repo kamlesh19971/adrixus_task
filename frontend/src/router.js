@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, ro, NavLink } from "react-router-dom";
 import Dashboard from "./pages/dashboard";
 import Login from "./pages/login";
 import SignUp from "./pages/singup";
+import Logout from "./pages/logout";
 
 const Router = (props) => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const Router = (props) => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
+        <Route path="/logout" element={<Logout />} />
         <Route
           path="*"
           element={
