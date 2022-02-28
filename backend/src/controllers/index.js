@@ -40,7 +40,7 @@ exports.login = async (req, res) => {
     const body = req.body;
     console.log(body);
     const user = await User.findOne(
-      { email: body.email },
+      { email: { $regex: body.email, $options: "i" } },
       { created_at: 0, updated_at: 0, __v: 0 }
     ).lean();
     console.log(user);
