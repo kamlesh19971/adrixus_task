@@ -1,7 +1,7 @@
 import axios from "axios";
-
+//http://localhost:5000
 let config = {
-  baseURL: "http://localhost:5000/api/",
+  baseURL: "/api/",
   timeout: 10000,
 };
 

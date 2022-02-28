@@ -9,4 +9,7 @@ const options = {
   family: 4,
 };
 
-module.exports = mongoose.connect("mongodb://localhost:27017", options);
+module.exports = mongoose.connect(
+  "mongodb+srv://kamlesh_thavani:kamlesh1997@cluster0.lvgyb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  options
+);
